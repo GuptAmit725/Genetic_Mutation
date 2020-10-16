@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict Your Cancerous Gene Mutation</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="text" name="Gene" id="Gene" placeholder="Gene">
+            <input type="text" name="Variation" id="Variation" placeholder="Variation">
+            <input type="text" name="TEXT" id="TEXT" placeholder="Description">
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+{% endblock %}

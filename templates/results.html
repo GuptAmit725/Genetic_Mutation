@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Gene Mutation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+   <div class="table-users">
+   <div class="header">Prediction</div>
+
+      <p>Your have class {{prediction}} gene mutation with prediction probability of {{prediction_prob}}</p>
+
+</div>
+   <div class="table-users">
+   <div class="header">Interpretation</div>
+       <p>Probabilty of prediciton of other gene classes are {{prediction_list}}</p>
+       <table style="width:100%">
+
+          <tr>
+            <th>Gene class</th>
+            <th>Mutation Chances</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>{{one}}</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>{{two}}</td>
+          </tr>
+           <tr>
+            <td>3</td>
+            <td>{{three}}</td>
+          </tr>
+           <tr>
+            <td>4</td>
+            <td>{{four}}</td>
+          </tr>
+           <tr>
+            <td>5</td>
+            <td>{{five}}</td>
+          </tr>
+           <tr>
+            <td>6</td>
+            <td>{{six}}</td>
+          </tr>
+           <tr>
+            <td>7</td>
+            <td>{{seven}}</td>
+          </tr>
+           <tr>
+            <td>8</td>
+            <td>{{eight}}</td>
+          </tr>
+           <tr>
+            <td>9</td>
+            <td>{{nine}}</td>
+          </tr>
+        </table>
+   </div>
+   <div class="header">Please visit:<a href="https://www.kaggle.com/c/msk-redefining-cancer-treatment/data"> for demo data to test the model.</a></div>
+   <h5 style="text-align:center;">Notice: Model only performs on the valid data.</h5>
+
+</body>
+
+</html>
